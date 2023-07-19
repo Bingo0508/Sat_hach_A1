@@ -1,0 +1,9 @@
+<!DOCTYPE RCC>
+<RCC>
+    <qresource prefix="/icons">
+        <file alias="app_icon">../icons/app_icon.png</file>
+        <file alias="next">../icons/next.png</file>
+        <file alias="previous">../icons/previous.png</file>
+        <file alias="submit">../icons/submit.png</file>
+    </qresource>
+</RCC>
