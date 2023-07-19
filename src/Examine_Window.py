@@ -12,3 +12,8 @@ class Examine_Window(QMainWindow):
 
         self.setWindowTitle("Sát hạch lái xe A1")
         self.setWindowIcon(QIcon(":icons/app_icon"))
+
+    def __load_button_icon(self):
+        self.__ui.next_question.setIcon(QIcon(":icons/next"))
+        self.__ui.previous_question.setIcon(QIcon(":icons/previous"))
+        self.__ui.submit.setIcon(QIcon(":icons/submit"))
