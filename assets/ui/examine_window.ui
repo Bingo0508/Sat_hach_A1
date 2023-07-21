@@ -141,6 +141,19 @@
           </widget>
          </item>
          <item>
+          <spacer name="verticalSpacer">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
           <layout class="QHBoxLayout" name="horizontalLayout_2">
            <item>
             <spacer name="horizontalSpacer_2">
@@ -176,6 +189,19 @@
             </spacer>
            </item>
           </layout>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
          </item>
          <item>
           <widget class="QGroupBox" name="groupBox">
@@ -283,7 +309,7 @@
        <item>
         <widget class="QLabel" name="label_4">
          <property name="text">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Lưu ý&lt;/span&gt;: Các câu trả lời rồi sẽ hiển thị màu xanh lá.&lt;br/&gt;Các câu chưa hoàn thành sẽ hiển thị màu đen.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Lưu ý&lt;/span&gt;: Các câu trả lời rồi sẽ hiển thị màu xanh lá.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
         </widget>
        </item>
@@ -355,6 +381,9 @@
            <layout class="QGridLayout" name="gridLayout">
             <item row="2" column="2">
              <widget class="QPushButton" name="question_13">
+              <property name="styleSheet">
+               <string notr="true">QPushButton { color: #000000; background-color: #ffffff }</string>
+              </property>
               <property name="text">
                <string>Câu 13</string>
               </property>
@@ -362,6 +391,9 @@
             </item>
             <item row="2" column="1">
              <widget class="QPushButton" name="question_12">
+              <property name="styleSheet">
+               <string notr="true">QPushButton { color: #000000; background-color: #ffffff }</string>
+              </property>
               <property name="text">
                <string>Câu 12</string>
               </property>
@@ -369,6 +401,9 @@
             </item>
             <item row="1" column="2">
              <widget class="QPushButton" name="question_8">
+              <property name="styleSheet">
+               <string notr="true">QPushButton { color: #000000; background-color: #ffffff }</string>
+              </property>
               <property name="text">
                <string>Câu 8</string>
               </property>
@@ -376,6 +411,9 @@
             </item>
             <item row="3" column="3">
              <widget class="QPushButton" name="question_19">
+              <property name="styleSheet">
+               <string notr="true">QPushButton { color: #000000; background-color: #ffffff }</string>
+              </property>
               <property name="text">
                <string>Câu 19</string>
               </property>
@@ -383,6 +421,9 @@
             </item>
             <item row="1" column="4">
              <widget class="QPushButton" name="question_10">
+              <property name="styleSheet">
+               <string notr="true">QPushButton { color: #000000; background-color: #ffffff }</string>
+              </property>
               <property name="text">
                <string>Câu 10</string>
               </property>
@@ -390,6 +431,9 @@
             </item>
             <item row="1" column="3">
              <widget class="QPushButton" name="question_9">
+              <property name="styleSheet">
+               <string notr="true">QPushButton { color: #000000; background-color: #ffffff }</string>
+              </property>
               <property name="text">
                <string>Câu 9</string>
               </property>
@@ -397,6 +441,9 @@
             </item>
             <item row="0" column="3">
              <widget class="QPushButton" name="question_4">
+              <property name="styleSheet">
+               <string notr="true">QPushButton { color: #000000; background-color: #ffffff }</string>
+              </property>
               <property name="text">
                <string>Câu 4</string>
               </property>
@@ -404,6 +451,9 @@
             </item>
             <item row="1" column="1">
              <widget class="QPushButton" name="question_7">
+              <property name="styleSheet">
+               <string notr="true">QPushButton { color: #000000; background-color: #ffffff }</string>
+              </property>
               <property name="text">
                <string>Câu 7</string>
               </property>
@@ -411,6 +461,9 @@
             </item>
             <item row="3" column="0">
              <widget class="QPushButton" name="question_16">
+              <property name="styleSheet">
+               <string notr="true">QPushButton { color: #000000; background-color: #ffffff }</string>
+              </property>
               <property name="text">
                <string>Câu 16</string>
               </property>
@@ -418,6 +471,9 @@
             </item>
             <item row="0" column="4">
              <widget class="QPushButton" name="question_5">
+              <property name="styleSheet">
+               <string notr="true">QPushButton { color: #000000; background-color: #ffffff }</string>
+              </property>
               <property name="text">
                <string>Câu 5</string>
               </property>
@@ -425,6 +481,9 @@
             </item>
             <item row="3" column="1">
              <widget class="QPushButton" name="question_17">
+              <property name="styleSheet">
+               <string notr="true">QPushButton { color: #000000; background-color: #ffffff }</string>
+              </property>
               <property name="text">
                <string>Câu 17</string>
               </property>
@@ -432,6 +491,9 @@
             </item>
             <item row="3" column="2">
              <widget class="QPushButton" name="question_18">
+              <property name="styleSheet">
+               <string notr="true">QPushButton { color: #000000; background-color: #ffffff }</string>
+              </property>
               <property name="text">
                <string>Câu 18</string>
               </property>
@@ -439,6 +501,9 @@
             </item>
             <item row="1" column="0">
              <widget class="QPushButton" name="question_6">
+              <property name="styleSheet">
+               <string notr="true">QPushButton { color: #000000; background-color: #ffffff }</string>
+              </property>
               <property name="text">
                <string>Câu 6</string>
               </property>
@@ -446,6 +511,9 @@
             </item>
             <item row="2" column="0">
              <widget class="QPushButton" name="question_11">
+              <property name="styleSheet">
+               <string notr="true">QPushButton { color: #000000; background-color: #ffffff }</string>
+              </property>
               <property name="text">
                <string>Câu 11</string>
               </property>
@@ -453,6 +521,9 @@
             </item>
             <item row="2" column="3">
              <widget class="QPushButton" name="question_14">
+              <property name="styleSheet">
+               <string notr="true">QPushButton { color: #000000; background-color: #ffffff }</string>
+              </property>
               <property name="text">
                <string>Câu 14</string>
               </property>
@@ -460,6 +531,9 @@
             </item>
             <item row="0" column="0">
              <widget class="QPushButton" name="question_1">
+              <property name="styleSheet">
+               <string notr="true">QPushButton { color: #000000; background-color: #ffffff }</string>
+              </property>
               <property name="text">
                <string>Câu 1</string>
               </property>
@@ -467,6 +541,9 @@
             </item>
             <item row="0" column="2">
              <widget class="QPushButton" name="question_3">
+              <property name="styleSheet">
+               <string notr="true">QPushButton { color: #000000; background-color: #ffffff }</string>
+              </property>
               <property name="text">
                <string>Câu 3</string>
               </property>
@@ -474,6 +551,9 @@
             </item>
             <item row="3" column="4">
              <widget class="QPushButton" name="question_20">
+              <property name="styleSheet">
+               <string notr="true">QPushButton { color: #000000; background-color: #ffffff }</string>
+              </property>
               <property name="text">
                <string>Câu 20</string>
               </property>
@@ -481,6 +561,9 @@
             </item>
             <item row="0" column="1">
              <widget class="QPushButton" name="question_2">
+              <property name="styleSheet">
+               <string notr="true">QPushButton { color: #000000; background-color: #ffffff }</string>
+              </property>
               <property name="text">
                <string>Câu 2</string>
               </property>
@@ -488,6 +571,9 @@
             </item>
             <item row="2" column="4">
              <widget class="QPushButton" name="question_15">
+              <property name="styleSheet">
+               <string notr="true">QPushButton { color: #000000; background-color: #ffffff }</string>
+              </property>
               <property name="text">
                <string>Câu 15</string>
               </property>
@@ -495,6 +581,9 @@
             </item>
             <item row="4" column="0">
              <widget class="QPushButton" name="question_21">
+              <property name="styleSheet">
+               <string notr="true">QPushButton { color: #000000; background-color: #ffffff }</string>
+              </property>
               <property name="text">
                <string>Câu 21</string>
               </property>
@@ -502,6 +591,9 @@
             </item>
             <item row="4" column="1">
              <widget class="QPushButton" name="question_22">
+              <property name="styleSheet">
+               <string notr="true">QPushButton { color: #000000; background-color: #ffffff }</string>
+              </property>
               <property name="text">
                <string>Câu 22</string>
               </property>
@@ -509,6 +601,9 @@
             </item>
             <item row="4" column="2">
              <widget class="QPushButton" name="question_23">
+              <property name="styleSheet">
+               <string notr="true">QPushButton { color: #000000; background-color: #ffffff }</string>
+              </property>
               <property name="text">
                <string>Câu 23</string>
               </property>
@@ -516,6 +611,9 @@
             </item>
             <item row="4" column="3">
              <widget class="QPushButton" name="question_24">
+              <property name="styleSheet">
+               <string notr="true">QPushButton { color: #000000; background-color: #ffffff }</string>
+              </property>
               <property name="text">
                <string>Câu 24</string>
               </property>
@@ -523,6 +621,9 @@
             </item>
             <item row="4" column="4">
              <widget class="QPushButton" name="question_25">
+              <property name="styleSheet">
+               <string notr="true">QPushButton { color: #000000; background-color: #ffffff }</string>
+              </property>
               <property name="text">
                <string>Câu 25</string>
               </property>

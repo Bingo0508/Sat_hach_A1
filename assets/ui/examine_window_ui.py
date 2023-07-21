@@ -113,6 +113,10 @@ class Ui_examine_window(object):
 
         self.verticalLayout.addWidget(self.question)
 
+        self.verticalSpacer = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
+
+        self.verticalLayout.addItem(self.verticalSpacer)
+
         self.horizontalLayout_2 = QHBoxLayout()
         self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
         self.horizontalSpacer_2 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
@@ -130,6 +134,10 @@ class Ui_examine_window(object):
 
 
         self.verticalLayout.addLayout(self.horizontalLayout_2)
+
+        self.verticalSpacer_2 = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
+
+        self.verticalLayout.addItem(self.verticalSpacer_2)
 
         self.groupBox = QGroupBox(self.frame)
         self.groupBox.setObjectName(u"groupBox")
@@ -241,126 +249,151 @@ class Ui_examine_window(object):
         self.gridLayout.setObjectName(u"gridLayout")
         self.question_13 = QPushButton(self.groupBox_2)
         self.question_13.setObjectName(u"question_13")
+        self.question_13.setStyleSheet(u"QPushButton { color: #000000; background-color: #ffffff }")
 
         self.gridLayout.addWidget(self.question_13, 2, 2, 1, 1)
 
         self.question_12 = QPushButton(self.groupBox_2)
         self.question_12.setObjectName(u"question_12")
+        self.question_12.setStyleSheet(u"QPushButton { color: #000000; background-color: #ffffff }")
 
         self.gridLayout.addWidget(self.question_12, 2, 1, 1, 1)
 
         self.question_8 = QPushButton(self.groupBox_2)
         self.question_8.setObjectName(u"question_8")
+        self.question_8.setStyleSheet(u"QPushButton { color: #000000; background-color: #ffffff }")
 
         self.gridLayout.addWidget(self.question_8, 1, 2, 1, 1)
 
         self.question_19 = QPushButton(self.groupBox_2)
         self.question_19.setObjectName(u"question_19")
+        self.question_19.setStyleSheet(u"QPushButton { color: #000000; background-color: #ffffff }")
 
         self.gridLayout.addWidget(self.question_19, 3, 3, 1, 1)
 
         self.question_10 = QPushButton(self.groupBox_2)
         self.question_10.setObjectName(u"question_10")
+        self.question_10.setStyleSheet(u"QPushButton { color: #000000; background-color: #ffffff }")
 
         self.gridLayout.addWidget(self.question_10, 1, 4, 1, 1)
 
         self.question_9 = QPushButton(self.groupBox_2)
         self.question_9.setObjectName(u"question_9")
+        self.question_9.setStyleSheet(u"QPushButton { color: #000000; background-color: #ffffff }")
 
         self.gridLayout.addWidget(self.question_9, 1, 3, 1, 1)
 
         self.question_4 = QPushButton(self.groupBox_2)
         self.question_4.setObjectName(u"question_4")
+        self.question_4.setStyleSheet(u"QPushButton { color: #000000; background-color: #ffffff }")
 
         self.gridLayout.addWidget(self.question_4, 0, 3, 1, 1)
 
         self.question_7 = QPushButton(self.groupBox_2)
         self.question_7.setObjectName(u"question_7")
+        self.question_7.setStyleSheet(u"QPushButton { color: #000000; background-color: #ffffff }")
 
         self.gridLayout.addWidget(self.question_7, 1, 1, 1, 1)
 
         self.question_16 = QPushButton(self.groupBox_2)
         self.question_16.setObjectName(u"question_16")
+        self.question_16.setStyleSheet(u"QPushButton { color: #000000; background-color: #ffffff }")
 
         self.gridLayout.addWidget(self.question_16, 3, 0, 1, 1)
 
         self.question_5 = QPushButton(self.groupBox_2)
         self.question_5.setObjectName(u"question_5")
+        self.question_5.setStyleSheet(u"QPushButton { color: #000000; background-color: #ffffff }")
 
         self.gridLayout.addWidget(self.question_5, 0, 4, 1, 1)
 
         self.question_17 = QPushButton(self.groupBox_2)
         self.question_17.setObjectName(u"question_17")
+        self.question_17.setStyleSheet(u"QPushButton { color: #000000; background-color: #ffffff }")
 
         self.gridLayout.addWidget(self.question_17, 3, 1, 1, 1)
 
         self.question_18 = QPushButton(self.groupBox_2)
         self.question_18.setObjectName(u"question_18")
+        self.question_18.setStyleSheet(u"QPushButton { color: #000000; background-color: #ffffff }")
 
         self.gridLayout.addWidget(self.question_18, 3, 2, 1, 1)
 
         self.question_6 = QPushButton(self.groupBox_2)
         self.question_6.setObjectName(u"question_6")
+        self.question_6.setStyleSheet(u"QPushButton { color: #000000; background-color: #ffffff }")
 
         self.gridLayout.addWidget(self.question_6, 1, 0, 1, 1)
 
         self.question_11 = QPushButton(self.groupBox_2)
         self.question_11.setObjectName(u"question_11")
+        self.question_11.setStyleSheet(u"QPushButton { color: #000000; background-color: #ffffff }")
 
         self.gridLayout.addWidget(self.question_11, 2, 0, 1, 1)
 
         self.question_14 = QPushButton(self.groupBox_2)
         self.question_14.setObjectName(u"question_14")
+        self.question_14.setStyleSheet(u"QPushButton { color: #000000; background-color: #ffffff }")
 
         self.gridLayout.addWidget(self.question_14, 2, 3, 1, 1)
 
         self.question_1 = QPushButton(self.groupBox_2)
         self.question_1.setObjectName(u"question_1")
+        self.question_1.setStyleSheet(u"QPushButton { color: #000000; background-color: #ffffff }")
 
         self.gridLayout.addWidget(self.question_1, 0, 0, 1, 1)
 
         self.question_3 = QPushButton(self.groupBox_2)
         self.question_3.setObjectName(u"question_3")
+        self.question_3.setStyleSheet(u"QPushButton { color: #000000; background-color: #ffffff }")
 
         self.gridLayout.addWidget(self.question_3, 0, 2, 1, 1)
 
         self.question_20 = QPushButton(self.groupBox_2)
         self.question_20.setObjectName(u"question_20")
+        self.question_20.setStyleSheet(u"QPushButton { color: #000000; background-color: #ffffff }")
 
         self.gridLayout.addWidget(self.question_20, 3, 4, 1, 1)
 
         self.question_2 = QPushButton(self.groupBox_2)
         self.question_2.setObjectName(u"question_2")
+        self.question_2.setStyleSheet(u"QPushButton { color: #000000; background-color: #ffffff }")
 
         self.gridLayout.addWidget(self.question_2, 0, 1, 1, 1)
 
         self.question_15 = QPushButton(self.groupBox_2)
         self.question_15.setObjectName(u"question_15")
+        self.question_15.setStyleSheet(u"QPushButton { color: #000000; background-color: #ffffff }")
 
         self.gridLayout.addWidget(self.question_15, 2, 4, 1, 1)
 
         self.question_21 = QPushButton(self.groupBox_2)
         self.question_21.setObjectName(u"question_21")
+        self.question_21.setStyleSheet(u"QPushButton { color: #000000; background-color: #ffffff }")
 
         self.gridLayout.addWidget(self.question_21, 4, 0, 1, 1)
 
         self.question_22 = QPushButton(self.groupBox_2)
         self.question_22.setObjectName(u"question_22")
+        self.question_22.setStyleSheet(u"QPushButton { color: #000000; background-color: #ffffff }")
 
         self.gridLayout.addWidget(self.question_22, 4, 1, 1, 1)
 
         self.question_23 = QPushButton(self.groupBox_2)
         self.question_23.setObjectName(u"question_23")
+        self.question_23.setStyleSheet(u"QPushButton { color: #000000; background-color: #ffffff }")
 
         self.gridLayout.addWidget(self.question_23, 4, 2, 1, 1)
 
         self.question_24 = QPushButton(self.groupBox_2)
         self.question_24.setObjectName(u"question_24")
+        self.question_24.setStyleSheet(u"QPushButton { color: #000000; background-color: #ffffff }")
 
         self.gridLayout.addWidget(self.question_24, 4, 3, 1, 1)
 
         self.question_25 = QPushButton(self.groupBox_2)
         self.question_25.setObjectName(u"question_25")
+        self.question_25.setStyleSheet(u"QPushButton { color: #000000; background-color: #ffffff }")
 
         self.gridLayout.addWidget(self.question_25, 4, 4, 1, 1)
 
@@ -436,7 +469,7 @@ class Ui_examine_window(object):
         self.next_question.setToolTip(QCoreApplication.translate("examine_window", u"C\u00e2u ti\u1ebfp theo", None))
 #endif // QT_CONFIG(tooltip)
         self.next_question.setText(QCoreApplication.translate("examine_window", u"C\u00e2u ti\u1ebfp", None))
-        self.label_4.setText(QCoreApplication.translate("examine_window", u"<html><head/><body><p><span style=\" font-weight:700;\">L\u01b0u \u00fd</span>: C\u00e1c c\u00e2u tr\u1ea3 l\u1eddi r\u1ed3i s\u1ebd hi\u1ec3n th\u1ecb m\u00e0u xanh l\u00e1.<br/>C\u00e1c c\u00e2u ch\u01b0a ho\u00e0n th\u00e0nh s\u1ebd hi\u1ec3n th\u1ecb m\u00e0u \u0111en.</p></body></html>", None))
+        self.label_4.setText(QCoreApplication.translate("examine_window", u"<html><head/><body><p><span style=\" font-weight:700;\">L\u01b0u \u00fd</span>: C\u00e1c c\u00e2u tr\u1ea3 l\u1eddi r\u1ed3i s\u1ebd hi\u1ec3n th\u1ecb m\u00e0u xanh l\u00e1.</p></body></html>", None))
         self.groupBox_2.setTitle(QCoreApplication.translate("examine_window", u"C\u00e1c c\u00e2u h\u1ecfi", None))
         self.label_5.setText(QCoreApplication.translate("examine_window", u"B\u1ea1n c\u00f2n", None))
         self.not_answer_question.setText(QCoreApplication.translate("examine_window", u"25", None))
