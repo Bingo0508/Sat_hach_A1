@@ -10,6 +10,13 @@ class Examine_Window(QMainWindow):
 
         self.__ui.setupUi(self)
 
+        ui = self.__ui
+        self.__QUESTION_BUTTONS = [ ui.question_1, ui.question_2, ui.question_3, ui.question_4, ui.question_5,
+                                    ui.question_6, ui.question_7, ui.question_8, ui.question_9, ui.question_10,
+                                    ui.question_11, ui.question_12, ui.question_13, ui.question_14, ui.question_15,
+                                    ui.question_16, ui.question_17, ui.question_18, ui.question_19, ui.question_20,
+                                    ui.question_21, ui.question_22, ui.question_23, ui.question_24, ui.question_25 ]
+        
         self.__setting_up_button()
 
         self.setWindowTitle("Sát hạch lái xe A1")
@@ -17,14 +24,8 @@ class Examine_Window(QMainWindow):
 
     def __setting_up_button(self):
         self.__load_button_icon()
-        self.__connect_button_signal_and_slot()
 
     def __load_button_icon(self):
         self.__ui.next_question.setIcon(QIcon(":icons/next"))
         self.__ui.previous_question.setIcon(QIcon(":icons/previous"))
         self.__ui.submit.setIcon(QIcon(":icons/submit"))
-
-    def __connect_button_signal_and_slot(self):
-        self.__ui.next_question.clicked.connect(self.move_to_next_question)
-        self.__ui.previous_question.clicked.connect(self.move_to_previous_question)
-        self.__ui.submit.clicked.connect(self.submit)
