@@ -16,17 +16,17 @@ from PySide6.QtGui import (QAction, QBrush, QColor, QConicalGradient,
     QIcon, QImage, QKeySequence, QLinearGradient,
     QPainter, QPalette, QPixmap, QRadialGradient,
     QTransform)
-from PySide6.QtWidgets import (QApplication, QFrame, QGridLayout, QGroupBox,
-    QHBoxLayout, QLCDNumber, QLabel, QMainWindow,
-    QMenu, QMenuBar, QPushButton, QRadioButton,
-    QSizePolicy, QSpacerItem, QSpinBox, QStatusBar,
-    QVBoxLayout, QWidget)
+from PySide6.QtWidgets import (QApplication, QFormLayout, QFrame, QGridLayout,
+    QGroupBox, QHBoxLayout, QLCDNumber, QLabel,
+    QMainWindow, QMenu, QMenuBar, QPushButton,
+    QRadioButton, QSizePolicy, QSpacerItem, QSpinBox,
+    QStatusBar, QVBoxLayout, QWidget)
 
 class Ui_examine_window(object):
     def setupUi(self, examine_window):
         if not examine_window.objectName():
             examine_window.setObjectName(u"examine_window")
-        examine_window.resize(825, 532)
+        examine_window.resize(824, 550)
         icon = QIcon()
         icon.addFile(u"assets/icons/app_icon.ico", QSize(), QIcon.Normal, QIcon.Off)
         examine_window.setWindowIcon(icon)
@@ -52,8 +52,8 @@ class Ui_examine_window(object):
         self.verticalLayout_5.setObjectName(u"verticalLayout_5")
         self.widget = QWidget(self.centralwidget)
         self.widget.setObjectName(u"widget")
-        self.widget.setMinimumSize(QSize(0, 50))
-        self.widget.setMaximumSize(QSize(16777215, 40))
+        self.widget.setMinimumSize(QSize(0, 43))
+        self.widget.setMaximumSize(QSize(16777215, 43))
         self.horizontalLayout = QHBoxLayout(self.widget)
         self.horizontalLayout.setObjectName(u"horizontalLayout")
         self.label = QLabel(self.widget)
@@ -141,27 +141,47 @@ class Ui_examine_window(object):
 
         self.groupBox = QGroupBox(self.frame)
         self.groupBox.setObjectName(u"groupBox")
-        self.verticalLayout_2 = QVBoxLayout(self.groupBox)
-        self.verticalLayout_2.setObjectName(u"verticalLayout_2")
+        self.formLayout = QFormLayout(self.groupBox)
+        self.formLayout.setObjectName(u"formLayout")
         self.first_answer = QRadioButton(self.groupBox)
         self.first_answer.setObjectName(u"first_answer")
 
-        self.verticalLayout_2.addWidget(self.first_answer)
+        self.formLayout.setWidget(0, QFormLayout.LabelRole, self.first_answer)
+
+        self.first_answer_label = QLabel(self.groupBox)
+        self.first_answer_label.setObjectName(u"first_answer_label")
+
+        self.formLayout.setWidget(0, QFormLayout.FieldRole, self.first_answer_label)
 
         self.second_answer = QRadioButton(self.groupBox)
         self.second_answer.setObjectName(u"second_answer")
 
-        self.verticalLayout_2.addWidget(self.second_answer)
+        self.formLayout.setWidget(1, QFormLayout.LabelRole, self.second_answer)
+
+        self.second_answer_label = QLabel(self.groupBox)
+        self.second_answer_label.setObjectName(u"second_answer_label")
+
+        self.formLayout.setWidget(1, QFormLayout.FieldRole, self.second_answer_label)
 
         self.third_answer = QRadioButton(self.groupBox)
         self.third_answer.setObjectName(u"third_answer")
 
-        self.verticalLayout_2.addWidget(self.third_answer)
+        self.formLayout.setWidget(2, QFormLayout.LabelRole, self.third_answer)
+
+        self.third_answer_label = QLabel(self.groupBox)
+        self.third_answer_label.setObjectName(u"third_answer_label")
+
+        self.formLayout.setWidget(2, QFormLayout.FieldRole, self.third_answer_label)
 
         self.fourth_answer = QRadioButton(self.groupBox)
         self.fourth_answer.setObjectName(u"fourth_answer")
 
-        self.verticalLayout_2.addWidget(self.fourth_answer)
+        self.formLayout.setWidget(3, QFormLayout.LabelRole, self.fourth_answer)
+
+        self.fourth_answer_label = QLabel(self.groupBox)
+        self.fourth_answer_label.setObjectName(u"fourth_answer_label")
+
+        self.formLayout.setWidget(3, QFormLayout.FieldRole, self.fourth_answer_label)
 
 
         self.verticalLayout.addWidget(self.groupBox)
@@ -413,7 +433,7 @@ class Ui_examine_window(object):
         examine_window.setCentralWidget(self.centralwidget)
         self.menubar = QMenuBar(examine_window)
         self.menubar.setObjectName(u"menubar")
-        self.menubar.setGeometry(QRect(0, 0, 825, 22))
+        self.menubar.setGeometry(QRect(0, 0, 824, 22))
         self.menuCh_c_n_ng = QMenu(self.menubar)
         self.menuCh_c_n_ng.setObjectName(u"menuCh_c_n_ng")
         self.menuTh_ng_tin = QMenu(self.menubar)
@@ -453,10 +473,14 @@ class Ui_examine_window(object):
         self.question.setText(QCoreApplication.translate("examine_window", u"C\u00e2u h\u1ecfi", None))
         self.image_question.setText("")
         self.groupBox.setTitle(QCoreApplication.translate("examine_window", u"\u0110\u00e1p \u00e1n", None))
-        self.first_answer.setText(QCoreApplication.translate("examine_window", u"A", None))
-        self.second_answer.setText(QCoreApplication.translate("examine_window", u"B", None))
-        self.third_answer.setText(QCoreApplication.translate("examine_window", u"C", None))
-        self.fourth_answer.setText(QCoreApplication.translate("examine_window", u"D", None))
+        self.first_answer.setText("")
+        self.first_answer_label.setText(QCoreApplication.translate("examine_window", u"A", None))
+        self.second_answer.setText("")
+        self.second_answer_label.setText(QCoreApplication.translate("examine_window", u"B", None))
+        self.third_answer.setText("")
+        self.third_answer_label.setText(QCoreApplication.translate("examine_window", u"C", None))
+        self.fourth_answer.setText("")
+        self.fourth_answer_label.setText(QCoreApplication.translate("examine_window", u"D", None))
 #if QT_CONFIG(tooltip)
         self.previous_question.setToolTip(QCoreApplication.translate("examine_window", u"C\u00e2u tr\u01b0\u1edbc \u0111\u00f3", None))
 #endif // QT_CONFIG(tooltip)
